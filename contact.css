@@ -1,0 +1,160 @@
+#background{
+    min-height: 640px;
+    width: 100%;
+   
+}
+#top{
+    height: 35px;
+    width: 100%;
+    background:rgba(244, 217, 12, 0.944);
+    line-height: 35px;
+    padding: 0px 20px 9px 100px;
+    box-sizing: border-box;
+    word-spacing:10px;
+}
+#top a{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+#menu{
+    height: 65px;
+    width: 100%;
+    background:green;
+   
+}
+#logo{
+    height: 65px;
+    width: 40%;
+    background:white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 40px;
+    float: left;
+}
+#logo h4{
+    margin-top: 0px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+#menu1{
+    height: 65px;
+    width: 60%;
+    background:white;
+    float: left;
+    
+}
+#menu1 UL{
+    list-style: none;
+    padding-left: 200px;
+    box-sizing: border-box;
+    
+}
+#menu1 LI{
+    height: 45px;
+    width: 130px;
+    font-weight: bolder;
+    text-align: center ; 
+    display: inline-block; 
+    line-height: 45px;
+    transform: translateY(-5px);
+    color:black;
+    font-size: 20px;
+   
+}
+#menu1 LI:hover{
+    background: rgba(244, 217, 12, 0.944);  
+    color: black; 
+    transition: all ease-in-out 0.5s;
+    border-radius: 3px;
+}
+#slider{
+    height:625px;
+    width: 100%;
+    background:url(contact_image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#slider h1{
+    color: black;
+    margin-left: 360px;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+}
+#slider p{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+#slider-content{
+    height: 400px;
+    width: 60%;
+    background:rgba(255,255,255, .3); 
+    border: 1px solid white ;
+    margin-left: 50px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#slider-content input[type="text"], input[type="number"], input[type="email"]
+{
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 350px;
+    margin-left: 10px;
+}
+.submit:hover{
+    background-color: #02264f;
+    color: white;
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

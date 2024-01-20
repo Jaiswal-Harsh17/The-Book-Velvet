@@ -1,0 +1,186 @@
+#background{
+    min-height: 640px;
+    width: 100%;
+   
+}
+#top{
+    height: 35px;
+    width: 100%;
+    background:black;
+    line-height: 35px;
+    padding: 0px 20px 9px 100px;
+    box-sizing: border-box;
+    word-spacing:10px ; 
+}
+#top a{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+#menu{
+    height: 65px;
+    width: 100%;
+    background:green;
+   
+}
+#logo{
+    height: 65px;
+    width: 40%;
+    background:white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 40px;
+    float: left;
+}
+#logo h4{
+    margin-top: 0px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+#menu1{
+    height: 65px;
+    width: 60%;
+    background:white;
+    float: left;
+    
+}
+#menu1 UL{
+    list-style: none;
+    padding-left: 200px;
+    box-sizing: border-box;
+}
+#menu1 ul a{
+    color: black;
+}
+#menu1 LI{
+    height: 45px;
+    width: 130px;
+    font-weight: bold;
+    text-align: center ; 
+    display: inline-block; 
+    line-height: 45px;
+    transform: translateY(-5px);
+    color:black;
+    font-size: 20px;
+   
+}
+#menu1 LI:hover{
+    background: black;  
+    color: white; 
+    transition: all ease-in-out 0.5s;
+    border-radius: 3px;
+}
+#y{
+    height:540px;
+    width: 30%;
+    margin-left: 500px;
+    margin-top: 60px;
+    background:rgba(0,0,0,0); 
+    float: left;
+    
+    
+}
+#student{
+    margin:50px 50px;
+    color:black;  
+}
+#student p{
+    font-size: 20px;
+    color: blue;
+}
+#student p:hover{
+    color:black;
+}
+#note{
+    margin-left: 45px;
+    border: 2px solid black;
+    height: 80px;
+    width: 80%;
+}
+#check{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 60%;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-size: 15px;
+}
+#checkbox{
+    height: 30px;
+    width: 25px;
+}
+
+#l{
+    height:540px;
+    width: 100%;
+    background:rgba(255,255,255, .6); 
+    float: left; 
+    border-radius: 7px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+    
+}
+#l:hover{
+    /* background:linear-gradient(45deg,rgba(50,177,40, .6),rgba(255,255,255, .6)); */
+    background: linear-gradient(90deg,black,white);
+}
+.t{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+#slider{
+    height:660px;
+    width: 100%;
+    background:url(password_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
